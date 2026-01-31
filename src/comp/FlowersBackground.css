@@ -1,0 +1,39 @@
+.flower-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;          /* WHITE background */
+  overflow: hidden;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.flower-bg span {
+  position: absolute;
+  bottom: -40px;
+  color: #ff4fd8;             /* neon pink */
+  opacity: 0.6;
+  text-shadow:
+    0 0 4px #ff4fd8,
+    0 0 8px #ff9de9,
+    0 0 12px #ffd1f3;          /* neon glow */
+  animation-name: floatFlower;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes floatFlower {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-120vh) rotate(360deg);
+    opacity: 0;
+  }
+}

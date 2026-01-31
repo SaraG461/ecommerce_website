@@ -1,13 +1,14 @@
 import React from 'react'
 import Nav from './comp/nav'
-import HeartsBackground from "./comp/heartbackground";
+import FlowersBackground from './comp/FlowersBackground'
 import { BrowserRouter } from 'react-router-dom'
+
 
 const App = () => {
   return (
     <>
     <BrowserRouter>
-    <HeartsBackground />
+    <FlowersBackground />
       <Nav />
     </BrowserRouter>  
     </>
