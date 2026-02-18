@@ -13,7 +13,21 @@
 .home .top_banner
 {
    max-width: 100%;
-   height: 550px;
-   background: url('http://localhost:3000/images/banner2.png');
+   height: 600px;
+   background: url('http://localhost:3000/images/banner4.png');
+   background-size: cover;
+   background-repeat: no-repeat;
+   padding: 50px 60px;
+   position: relative;
+   overflow: hidden;
+   z-index: 1;
 
+}
+
+.home .top_banner .contant
+{
+    width: 100%;
+    position: relative;
+    top: 20%;
+    padding: 20px 50px;
 }
